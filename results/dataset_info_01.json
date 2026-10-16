@@ -1,0 +1,122 @@
+{
+ "notebook": "01",
+ "data_kinds": [
+  "real_books",
+  "real_prices"
+ ],
+ "baskets": [
+  "fed-oct-2026"
+ ],
+ "datasets": [
+  {
+   "kind": "real_prices",
+   "basket_id": "fed-oct-2026",
+   "title": "Fed Decision in October?",
+   "t_start": "2026-09-02T03:01:00",
+   "t_end": "2026-10-02T02:59:00",
+   "hours": 719.9666666666667,
+   "n_rows": 43189,
+   "n_sessions": 1,
+   "sources": [
+    {
+     "manifest": "/home/user/bayes_project/data/prices_history/fed-oct-2026/manifest.json",
+     "fetched_at": "2026-10-02T02:59:37.379220+00:00"
+    }
+   ],
+   "seed": null,
+   "notes": [
+    "Execution books are MODELLED: per-leg spread 50-bps-decrease=1 tick(s), 25-bps-decrease=1 tick(s), no-change=1 tick(s), 25-bps-increase=1 tick(s), 50-bps-increase=1 tick(s) (default 1 tick)."
+   ],
+   "synthetic": false,
+   "code_version": "c0012d6"
+  },
+  {
+   "kind": "real_books",
+   "basket_id": "fed-oct-2026",
+   "title": "Fed Decision in October?",
+   "t_start": "2026-10-01T22:30:10",
+   "t_end": "2026-10-08T08:19:51",
+   "hours": 151.5875480069444,
+   "n_rows": 93179,
+   "n_sessions": 82,
+   "sources": [
+    {
+     "group": "main",
+     "manifest": "/home/user/bayes_project/data/historical_books/main/manifest.json"
+    }
+   ],
+   "seed": null,
+   "notes": [],
+   "synthetic": false,
+   "code_version": "c0012d6"
+  }
+ ],
+ "synthetic": false,
+ "code_version": "c0012d6",
+ "basket_stats": [
+  {
+   "basket": "fed-oct-2026",
+   "legs": 5,
+   "minutes": 43189,
+   "mean \u03a3P": 1.0105488897635972,
+   "sd \u03a3P": 0.011200596213804504,
+   "q01": 0.9895,
+   "q99": 1.0305,
+   "ADF p": 1.1971055302343526e-05,
+   "KPSS p": "<0.01",
+   "half-life (min)": 117.47704208713445,
+   "HAC t (mean=1)": 7.501290898907325,
+   "augmented": false,
+   "ADF p (Holm)": 1.1971055302343526e-05,
+   "verdict": "inconclusive"
+  }
+ ],
+ "half_life_min": 117.47704208713445,
+ "hurdles": [
+  {
+   "basket": "fed-oct-2026",
+   "spread_sum": 0.02299999999999991,
+   "spread source": "recorded books",
+   "fee/unit F": 0.02650437662239429,
+   "round-trip hurdle": 0.0753236057340797,
+   "sd \u03a3P (1-min)": 0.011200596213804504,
+   "ECR = sd/hurdle": 0.14869968192105365
+  },
+  {
+   "basket": "balance-of-power-2026",
+   "spread_sum": 0.03300000000000014,
+   "spread source": "recorded books",
+   "fee/unit F": 0.023015231339205487,
+   "round-trip hurdle": 0.07826744093897944,
+   "sd \u03a3P (1-min)": 0.013554563915916498,
+   "ECR = sd/hurdle": 0.1731826638676509
+  },
+  {
+   "basket": "house-2026",
+   "spread_sum": 0.020000000000000018,
+   "spread source": "recorded books",
+   "fee/unit F": 0.007478609192119506,
+   "round-trip hurdle": 0.03496034605268096,
+   "sd \u03a3P (1-min)": 0.005510734435734942,
+   "ECR = sd/hurdle": 0.1576281432520988
+  },
+  {
+   "basket": "senate-2026",
+   "spread_sum": 0.020000000000000018,
+   "spread source": "recorded books",
+   "fee/unit F": 0.019574215234720933,
+   "round-trip hurdle": 0.059151915905885304,
+   "sd \u03a3P (1-min)": 0.006429886379266756,
+   "ECR = sd/hurdle": 0.10870123614418745
+  },
+  {
+   "basket": "mlb-ws-2026",
+   "spread_sum": 0.08500000000000019,
+   "spread source": "recorded books",
+   "fee/unit F": 0.0225631681933576,
+   "round-trip hurdle": 0.1280650488739804,
+   "sd \u03a3P (1-min)": 0.04889511420806531,
+   "ECR = sd/hurdle": 0.38179905163804273
+  }
+ ]
+}
